@@ -7,12 +7,11 @@
 
 body{
   background-color: black;
+  overflow: hidden;
 }
 
 #bg-video{
     width: 100%;
-    padding: 0;
-    z-index: -2;
 }
 
 #title1, #title2, #title3{
@@ -34,6 +33,7 @@ p{
     justify-content: center;
     align-items: center;
     background-color: #e3d9d7;
+    z-index: 10;
 }
 
 #gift-holder{
