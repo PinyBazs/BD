@@ -10,8 +10,9 @@ body{
   overflow-x: hidden;
 }
 
-#bg-video{
-    width: 100%;
+video {
+  width: 100%;
+  max-height: 100%;
 }
 
 #title1, #title2, #title3{
@@ -58,15 +59,17 @@ p{
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 30vh;
+    top: 15vh;
     width: 100%;
     opacity: 0%;
 
 }
 
 #concert-p{
+
     font-size: 6rem;
     color: #f9f9f9;
+
 }
 
 #bg-confetti{
@@ -88,19 +91,6 @@ p{
   color: white;
 }
 
-@media only screen and (orientation: portrait) {
-    #bg-video {
-      width: auto;
-      height: 70vh;
-    }
-  }
-
-@media only screen and (orientation: portrait) {
-    #bg-confetti {
-      width: auto;
-      height: 70vh;
-    }
-  }
 
 @media screen and (max-width: 1000px) {
     #concert-p {
