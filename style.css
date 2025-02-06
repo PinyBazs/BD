@@ -68,7 +68,7 @@ p{
     color: #f9f9f9;
 }
 
-#confetti{
+#bg-confetti{
     position: fixed;
     top: 0;
     width: 100%;
@@ -78,6 +78,13 @@ p{
 
 @media only screen and (orientation: portrait) {
     #bg-video {
+      width: auto;
+      height: 80vh;
+    }
+  }
+
+@media only screen and (orientation: portrait) {
+    #bg-confetti {
       width: auto;
       height: 80vh;
     }
