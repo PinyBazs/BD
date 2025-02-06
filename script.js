@@ -18,10 +18,12 @@ function ShowTitle() {
         
         percent = percent + 5;
         title.style.opacity = String(percent + "%");
-        console.log("tit" + percent);
+
         if(title.style.opacity == 1 ){
-            console.log("stop");
+
             clearInterval(interv);
+
+
         }
         
     }
@@ -36,7 +38,7 @@ function HideConfetti() {
         
         percent = percent - 5;
         confetti.style.opacity = String(percent + "%");
-        console.log("con" + percent);
+
         if(confetti.style.opacity == 0 ){
             clearInterval(interv);
             interv = setInterval(ShowTitle, 100);

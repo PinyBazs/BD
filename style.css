@@ -7,7 +7,7 @@
 
 body{
   background-color: black;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 #bg-video{
@@ -28,6 +28,8 @@ p{
 
 
 #gift-wrapper{
+    position: absolute;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
