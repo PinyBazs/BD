@@ -5,9 +5,11 @@
     border: 0;
 }
 
+body{
+  background-color: black;
+}
+
 #bg-video{
-    position: fixed;
-    top: 0;
     width: 100%;
     padding: 0;
     z-index: -2;
@@ -24,9 +26,6 @@ p{
     font-size: 1rem;
 }
 
-#content{
-    background-color: #e3d9d7;
-}
 
 
 #gift-wrapper{
@@ -34,6 +33,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #e3d9d7;
 }
 
 #gift-holder{
@@ -58,7 +58,6 @@ p{
     position: absolute;
     top: 30vh;
     width: 100%;
-    z-index: -2;
     opacity: 0%;
 
 }
@@ -76,17 +75,28 @@ p{
     z-index: -1;
 }
 
+#black-top{
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#white-p{
+  color: white;
+}
+
 @media only screen and (orientation: portrait) {
     #bg-video {
       width: auto;
-      height: 100vh;
+      height: 70vh;
     }
   }
 
 @media only screen and (orientation: portrait) {
     #bg-confetti {
       width: auto;
-      height: 100vh;
+      height: 70vh;
     }
   }
 
