@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+#bg-video{
+    position: fixed;
+    top: 0;
+    width: 110%;
+    padding: 0;
+    z-index: -1;
+}
+
+#title1, #title2, #title3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-family: "Roboto", serif;
+    font-size: 1rem;
+}
+
+#content{
+    background-color: #e3d9d7;
+}
+
+
+#gift-wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gift-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#gift{
+    cursor: pointer;
+    width: 15vw;
+    height: auto;
+    min-width: 100px;
+    min-height: 100px;
+    animation: giftShake 5s linear infinite alternate;
+}
+
+#concert-title{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 30vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0%;
+
+}
+
+#concert-p{
+    font-size: 6rem;
+    color: #f9f9f9;
+}
+
+@media only screen and (orientation: portrait) {
+    #bg-video {
+      width: auto;
+      height: 80vh;
+    }
+  }
+
+@media screen and (max-width: 1000px) {
+    #concert-p {
+      font-size: 3rem;
+    }
+  }
+
+@media screen and (max-width: 450px) {
+    #concert-p {
+      font-size: 2rem;
+    }
+  }
+
+@keyframes giftShake {
+    0%   {transform: rotate(10deg);}
+    25%  {transform: rotate(-10deg);}
+    50%  {transform: rotate(10deg);}
+    100% {transform: rotate(-10deg);}
+  }
