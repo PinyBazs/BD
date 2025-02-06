@@ -79,14 +79,14 @@ p{
 @media only screen and (orientation: portrait) {
     #bg-video {
       width: auto;
-      height: 80vh;
+      height: 100vh;
     }
   }
 
 @media only screen and (orientation: portrait) {
     #bg-confetti {
       width: auto;
-      height: 80vh;
+      height: 100vh;
     }
   }
 
