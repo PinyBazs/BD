@@ -1,14 +1,17 @@
 
-let percent = 100;
+let percent = 0;
 let interv;
+
 let now = new Date();
 let eventDate = new Date("2025-06-15");
 function OpenGift() {
     let gift = document.getElementById("gift-wrapper");
     if(gift){
         gift.remove();
-        interv = setInterval(dateDiffInDays(now, eventDate), 3600000);
+        playAudio();
     }
+
+    dateDiffInDays(now, eventDate);
 
     let descr = document.getElementById("description");
 
@@ -32,6 +35,10 @@ function OpenGift() {
         
         +"Előjátszó: Declan McKenna"
     }
+
+
+    interv = setInterval(GetGift, 100);
+    
         
   }
 
@@ -50,3 +57,25 @@ function dateDiffInDays(a, b) {
     }
 
   }
+
+function GetGift(){
+    let content = document.getElementById("open-gift");
+    if(content){
+        percent = percent + 2;
+        content.style.opacity = percent + "%";
+        console.log(content.style.opacity);
+        
+        if(content.style.opacity >= 1){
+            console.log("stop");
+            clearInterval(interv);
+            
+        }
+    }
+}
+
+function playAudio(){
+    let audio = document.getElementById("bgmusic");
+    if(audio){
+        audio.play();
+    }
+}
