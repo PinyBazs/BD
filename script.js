@@ -8,7 +8,7 @@ function OpenGift() {
     let gift = document.getElementById("gift-wrapper");
     if(gift){
         gift.remove();
-        playAudio();
+
     }
 
     dateDiffInDays(now, eventDate);
@@ -70,12 +70,5 @@ function GetGift(){
             clearInterval(interv);
             
         }
-    }
-}
-
-function playAudio(){
-    let audio = document.getElementById("bgmusic");
-    if(audio){
-        audio.play();
     }
 }
