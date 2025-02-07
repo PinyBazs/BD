@@ -10,11 +10,6 @@ body{
   overflow-x: hidden;
 }
 
-video {
-  width: 100%;
-  max-height: 100%;
-}
-
 #title1, #title2, #title3{
     display: flex;
     justify-content: center;
@@ -55,54 +50,87 @@ p{
     animation: giftShake 5s linear infinite alternate;
 }
 
-#concert-title{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 15vh;
-    width: 100%;
-    opacity: 0%;
-
-}
-
-#concert-p{
-
-    font-size: 6rem;
-    color: #f9f9f9;
-
-}
-
-#bg-confetti{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 0;
-    z-index: -1;
-}
-
-#black-top{
-  height: 10rem;
+#top-banner{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#white-p{
+#timestamp{
   color: white;
 }
 
 
-@media screen and (max-width: 1000px) {
-    #concert-p {
-      font-size: 3rem;
-    }
-  }
+.responsive{
+  width: 100%;
+  height: auto;
 
-@media screen and (max-width: 450px) {
-    #concert-p {
-      font-size: 2rem;
-    }
+}
+
+#date-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.separator-div{
+  height: 4px;
+  border-radius: 2px;
+  background-color: #E26767;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 90vw;
+}
+
+#separator-holder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#date-p{
+  color: black;
+  font-size: 1rem;
+}
+
+#description{
+  max-width: 90vw;
+
+}
+#description-div{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.light-holder{
+  background-color: #D9D9D9;
+  padding: 10px;
+}
+
+.black-holder{
+    height: 2rem;
+    background-color: black;
+}
+
+#footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+}
+
+#img-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1000px) {
+  .responsive {
+    width: 50%;
   }
+}
 
 @keyframes giftShake {
     0%   {transform: rotate(15deg);}
