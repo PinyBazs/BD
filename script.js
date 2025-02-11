@@ -37,7 +37,7 @@ function OpenGift() {
     }
 
 
-    interv = setInterval(GetGift, 100);
+    interv = setInterval(GetGift, 50);
     
         
   }
