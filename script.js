@@ -11,7 +11,7 @@ function OpenGift() {
 
     }
 
-    var audio = new Audio('./assets/bgmusic.mp3');
+    var audio = new Audio('./assets/bg.mp3');
     audio.play();
 
     let bd = document.getElementById("bd");
