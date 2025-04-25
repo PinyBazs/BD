@@ -12,7 +12,10 @@ function OpenGift() {
     }
 
     var audio = new Audio('./assets/bgmusic.mp3');
-audio.play();
+    audio.play();
+
+    let bd = document.getElementById("bd");
+    bd.onblur = function(){audio.pause();};
 
     dateDiffInDays(now, eventDate);
 
