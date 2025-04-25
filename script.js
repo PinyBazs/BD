@@ -16,6 +16,7 @@ function OpenGift() {
 
     let bd = document.getElementById("bd");
     bd.onblur = function(){audio.pause();};
+    bd.onfocus = function(){audio.play();};
 
     dateDiffInDays(now, eventDate);
 
