@@ -11,6 +11,9 @@ function OpenGift() {
 
     }
 
+    var audio = new Audio('./assets/bgmusic.mp3');
+audio.play();
+
     dateDiffInDays(now, eventDate);
 
     let descr = document.getElementById("description");
@@ -37,7 +40,7 @@ function OpenGift() {
     }
 
 
-    interv = setInterval(GetGift, 50);
+    interv = setInterval(GetGift, 100);
     
         
   }
